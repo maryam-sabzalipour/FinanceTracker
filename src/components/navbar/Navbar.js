@@ -17,7 +17,7 @@ function Navbar() {
             to="/"
             className="navbar-brand text-light text-decoration-none pb-0"
           >
-            My Money Tracker
+            Finance Tracker
           </Link>
         </div>
 

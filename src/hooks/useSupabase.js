@@ -21,9 +21,7 @@ export const useSupabase = () => {
         setHasError(null)
         setLoading(false)
         setSuccess(true)
-        // let amountNum = Number(data.amount)
-        // updateTotal(amountNum)
-        // console.log(amountNum)
+
         if (error) {
           throw new Error(error.message)
         }

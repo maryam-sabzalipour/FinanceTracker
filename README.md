@@ -1,5 +1,5 @@
 # FinanceTracker
-A React application with Supabase as backend where users can log in to their account and add their everyday transactions.
+A React application with Supabase as backend where users can create account, log in and add their everyday transactions.
 
 # Styles
 I used bootstrap 5 to style the app along with sass to add my custom styles

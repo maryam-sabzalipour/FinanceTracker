@@ -1,0 +1,25 @@
+// ul {
+//   li:last-child {
+//     border-left: 1px solid #e0e0e0 !important;
+//   }
+//   li:nth-last-child(-n+2) {
+//     border-bottom: 1px solid #e0e0e0 !important;
+
+//   }
+// }
+.hover-primary:hover {
+  color: rgb(184, 46, 184) !important ;
+}
+.transaction-list {
+  li {
+    &:last-child {
+      font-size: 18px !important;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    &:last-child:hover {
+      color: red;
+    }
+  }
+}

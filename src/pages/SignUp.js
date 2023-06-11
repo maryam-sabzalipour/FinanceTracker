@@ -7,12 +7,7 @@ function SignUp() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const { loading, hasError, signupUser } = useSignup()
-  // const alertRef = useRef()
 
-  //Show Toast
-  // if (showToast) {
-  //   alertRef.current.classList.add("show")
-  // }
   const handleSubmit = async (e) => {
     e.preventDefault()
     signupUser(email, password, userName)
@@ -20,29 +15,6 @@ function SignUp() {
 
   return (
     <>
-      {/* <div className="d-flex justify-content-end mt-1 me-1">
-        <div
-          className="toast text-white bg-success border-0 "
-          data-bs-animation="true"
-          data-bs-autohide="true"
-          data-bs-delay="5000"
-          role="alert"
-          aria-live="assertive"
-          aria-atomic="true"
-          ref={alertRef}
-        >
-          <div className="d-flex">
-            <div className="toast-body">Registered Successfully.</div>
-            <button
-              type="button"
-              className="btn-close btn-close-white me-2 m-auto"
-              data-bs-dismiss="toast"
-              aria-label="Close"
-              onClick={() => alertRef.current.classList.remove("show")}
-            ></button>
-          </div>
-        </div>
-      </div> */}
       <div className="mt-5"></div>
       <div className="container-lg mt-5">
         <div className="row justify-content-center">
@@ -101,7 +73,6 @@ function SignUp() {
             </form>
           </div>
         </div>
-        {/* bootstrap alert */}
       </div>
     </>
   )

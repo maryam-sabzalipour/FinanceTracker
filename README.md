@@ -5,7 +5,7 @@ A React application with Supabase as backend where users can create account, log
 I used bootstrap 5 to style the app along with sass to add my custom styles
 
 # Backend
-Supabase has been used for Authentication and storing users data in database, Supabase is a backend as a servise platform where you can directly create your database there, having user authentication for your website (Supabse uses Postgres as database), etc. They offer three main products such as database, storage, authentication.
+Supabase has been used for Authentication and storing users data in database, Supabase is a backend as a service platform where you can directly create your database there, having user authentication for your website (Supabse uses Postgres as database), etc. They offer three main products such as database, storage, authentication.
 
 <img src="./src/assets/img/financeTracker.PNG" width="800">
 

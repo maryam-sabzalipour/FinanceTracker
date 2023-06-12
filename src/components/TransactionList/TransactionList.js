@@ -27,7 +27,7 @@ function TransactionList() {
           setNewTransaction(data)
           //handle realtime data
           supabase
-            .channel("any")
+            .channel("transactions")
             .on(
               "postgres_changes",
               { event: "INSERT", schema: "public", table: "transactions" },

@@ -23,7 +23,7 @@ function TransactionForm({ uid }) {
   }, [success])
   return (
     <>
-      <h3 className="h4 mt-3">Add a Transaction</h3>
+      <h3 className="h4 mt-3 text-center">Add a Transaction</h3>
       <div className="row mt-5 p-2">
         <div className="col-12">
           <form onSubmit={handleSubmit} className="transaction-form">
@@ -55,7 +55,7 @@ function TransactionForm({ uid }) {
             </div>
             <button
               type="submit"
-              className="btn btn-outline-light mb-5 mt-2 hover-primary"
+              className={loading ? "btn btn-outline-light mb-5 mt-2 disabled" : "btn btn-outline-light mb-5 mt-2 hover-primary"}
             >
               {loading ? "Adding..." : "Add Transaction"}
             </button>

@@ -6,14 +6,12 @@ import { useAuthContext } from "./useAuthContext"
 export const useSignup = () => {
   const [loading, setLoading] = useState(false)
   const [hasError, setHasError] = useState(null)
-  // const [showToast, setShowToast] = useState(false)
 
   const { dispatch } = useAuthContext()
 
   const signupUser = async (email, password, username) => {
     setHasError(null)
     setLoading(true)
-    // setShowToast(false)
 
     if (!email || !username) {
       setLoading(false)
@@ -35,7 +33,6 @@ export const useSignup = () => {
         if (data) {
           setLoading(false)
           setHasError(null)
-          // setShowToast(true)
 
           if (data.user !== null) {
             dispatch({ type: "SIGNIN", payload: data })
@@ -46,7 +43,6 @@ export const useSignup = () => {
         }
       } catch (error) {
         setLoading(false)
-        // setShowToast(false)
         setHasError(error.message)
       }
     }

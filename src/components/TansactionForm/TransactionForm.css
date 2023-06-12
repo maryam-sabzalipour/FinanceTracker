@@ -1,9 +1,7 @@
-.transaction-form {
-  .form-control {
-    border: 2px solid transparent !important;
-    &:focus {
-      box-shadow: none !important;
-      border: 2px solid rgb(142, 20, 142) !important;
-    }
-  }
+.transaction-form .form-control {
+  border: 2px solid transparent !important;
 }
+.transaction-form .form-control:focus {
+  box-shadow: none !important;
+  border: 2px solid rgb(142, 20, 142) !important;
+}/*# sourceMappingURL=TransactionForm.css.map */

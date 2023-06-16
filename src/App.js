@@ -17,19 +17,7 @@ import NotFound from "./pages/NotFound"
 
 function App() {
   const { authIsReady, user } = useAuthContext()
-  // console.log(user)
-  // const [token, setToken] = useState("")
-  // const getUserSession = (data) => {
-  //   setToken(data)
-  //   if (token) {
-  //     sessionStorage.setItem("token", JSON.stringify(token))
-  //   }
-  // }
-  // useEffect(() => {
-  //   if (sessionStorage.getItem("token")) {
-  //     JSON.parse(sessionStorage.getItem("token"))
-  //   }
-  // }, [])
+ 
   return (
     <div className="App">
       {authIsReady && (
